@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>General Crop Tool</title>
+    <title>Image Crop Coordinate Tool｜圖片裁切座標工具</title>
+    <meta name="description" content="Upload an image, drag to select a region, and copy its coordinates as normalized percentages (x1, y1, x2, y2) or pixels (x, y, width, height). Runs entirely in your browser. 上傳圖片、拖拉選取範圍，直接取得百分比或像素座標。">
+    <meta name="author" content="miwa23333">
+    <link rel="canonical" href="https://www.miwa23333.xyz/image-crop-preview/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="miwa23333">
+    <meta property="og:title" content="Image Crop Coordinate Tool">
+    <meta property="og:description" content="Drag to select a region of an image and copy its normalized or pixel coordinates. Runs entirely in your browser.">
+    <meta property="og:url" content="https://www.miwa23333.xyz/image-crop-preview/">
+    <link rel="icon" href="https://www.miwa23333.xyz/favicon.ico">
+    <!-- Google AdSense (same publisher ID as www.miwa23333.xyz) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7263548902633054" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css">
     <style>
         :root {
@@ -193,6 +204,13 @@
             <div class="preview-box">
                 <div class="img-preview"></div>
             </div>
+        </div>
+
+        <div id="about" style="margin-top:auto;padding-top:1rem;border-top:1px solid var(--border);font-size:.82rem;line-height:1.6;opacity:.9;">
+            <h2 style="font-size:.95rem;">About</h2>
+            <p>Select an image, drag a box over the region you need, and copy the result in either format. Normalized percentages stay valid when the same picture is resized; pixel values match the original file. Nothing is uploaded: the image is processed in your browser only.</p>
+            <p>選擇圖片後拖拉出範圍，就能複製百分比座標（左上與右下）或像素座標（位置與寬高）。圖片只在瀏覽器裡處理，不會上傳。</p>
+            <p><a href="https://www.miwa23333.xyz/posts/image-crop-preview/">Read more (中文說明)</a> · <a href="https://www.miwa23333.xyz/">miwa23333</a> · <a href="https://github.com/miwa23333/image-crop-preview">GitHub</a></p>
         </div>
         
     </div>
